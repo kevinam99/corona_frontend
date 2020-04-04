@@ -16,7 +16,7 @@ $(document).ready(function () {
       //process the form
       $.ajax({
         type: "POST",
-        url: "https://coronadailyupdates.org/api/users",
+        url: "https://6ee07b44.ngrok.io/api/users",
         data: formData,
         contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
         encode: false,
@@ -25,6 +25,8 @@ $(document).ready(function () {
           $('#duplicate').hide()
           $('#success').show()
           console.log("Data Saved: " + JSON.stringify(msg));
+          window.location = "/subscriptionSuccess.html"; // Goes to this page after subscribing successfully.
+
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
           console.log(XMLHttpRequest.responseText)
