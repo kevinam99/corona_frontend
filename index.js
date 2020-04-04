@@ -16,7 +16,7 @@ $(document).ready(function () {
       //process the form
       $.ajax({
         type: "POST",
-        url: "https://6ee07b44.ngrok.io/api/users",
+        url: "https://coronadailyupdates.org/api/users",
         data: formData,
         contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
         encode: false,
