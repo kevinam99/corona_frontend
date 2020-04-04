@@ -1,0 +1,14 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://i.imgur.com/oCHkKbm.jpg");
+  
+    /* Set a specific height */
+    width: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
